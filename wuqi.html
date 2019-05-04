@@ -22,13 +22,36 @@
   <iframe class="my_header" src="header.html" frameborder="0" scrolling="no"></iframe>
   <section>
     <div class="container">
+      <!-- 武器导航 -->
+      <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <a href="#xt" class="navbar-brand">武器系统</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#content">
+          <span class=navbar-toggler-icon></span>
+        </button>
+        <div class="collapse navbar-collapse" id="content">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#cfq" class="nav-link">冲锋枪</a></li>
+            <li class="nav-item"><a href="#sq" class="nav-link">双枪</a></li>
+            <li class="nav-item"><a href="#zhpq" class="nav-link">中后排枪</a></li>
+            <li class="nav-item"><a href="#jtl" class="nav-link">加特林</a></li>
+            <li class="nav-item"><a href="#jjq" class="nav-link">狙击枪</a></li>
+            <li class="nav-item"><a href="#ppq" class="nav-link">泡泡枪</a></li>
+            <li class="nav-item"><a href="#gt" class="nav-link">滚筒</a></li>
+            <li class="nav-item"><a href="#bs" class="nav-link">笔刷</a></li>
+            <li class="nav-item"><a href="#t" class="nav-link">桶</a></li>
+            <li class="nav-item"><a href="#s" class="nav-link">伞</a></li>
+            <li class="nav-item"><a href="#sub" class="nav-link">副武器</a></li>
+            <li class="nav-item"><a href="#spe" class="nav-link">特殊武器</a></li>
+          </ul>
+        </div>
+      </div>
       <!-- 武器系统介绍 -->
-      <div class="intro">
+      <div class="intro" id="xt">
         <h2 class="text-center fw800">武器系统(Weapons)</h2>
         <h4>武器获取</h4>
         <p>玩家等级达到4级时，便可在解锁的武器商店里购买武器。之后每次升级，可购买武器会逐渐增加，直至玩家30级商店可购买武器会全部解锁。</p>
         <div class="mx-auto my-4">
-          <img class="img-thumbnail" src="images/wuqi/shop.jpg">
+          <img class="img-thumbnail shop" src="images/wuqi/shop.jpg">
         </div>
         <h4>贴牌武器</h4>
         <p>
@@ -66,7 +89,7 @@
         <h3>主武器</h3>
         <h4>武器分类</h4>
         <p>
-          游戏中的主武器大致分为了下面几种类别，每个类别在造型、攻速和特殊用法等都有鲜明区别。不同类别武器对游动速度.人性速度也有相应影响。</p>
+          游戏中的主武器大致分为了下面几种类别，每个类别在造型、攻速和特殊用法等都有鲜明区别。不同类别武器对游动速度.人型速度也有相应影响。</p>
         </p>
       </div>
       <!-- 武器介绍部分 -->
@@ -1347,11 +1370,11 @@
         <p>副武器是类似武器上配备的道具。每种副武器都有不同的伤害、墨水消耗和用法。</p>
       </div>
       <!-- 副武器介绍 -->
-      <div id="subparent">
+      <div id="subparent" class="intro2">
         <!-- 三角雷 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_sjl" data-toggle="collapse">三角雷</h5>
+            <h5 data-target="#sub_sjl" data-toggle="collapse"><img src="images/wuqi/sub_sjl_logo.png">三角雷</h5>
           </div>
           <div class="collapse show" id="sub_sjl" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1366,7 +1389,7 @@
         <!-- 粘雷 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_nl" data-toggle="collapse">粘雷</h5>
+            <h5 data-target="#sub_nl" data-toggle="collapse"><img src="images/wuqi/sub_nl_logo.png">粘雷</h5>
           </div>
           <div class="collapse" id="sub_nl" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1381,7 +1404,7 @@
         <!-- 水球 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_sq" data-toggle="collapse">水球</h5>
+            <h5 data-target="#sub_sq" data-toggle="collapse"><img src="images/wuqi/sub_sq_logo.png">水球</h5>
           </div>
           <div class="collapse" id="sub_sq" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1396,7 +1419,7 @@
         <!-- 冰壶 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_bh" data-toggle="collapse">冰壶</h5>
+            <h5 data-target="#sub_bh" data-toggle="collapse"><img src="images/wuqi/sub_bh_logo.png">冰壶</h5>
           </div>
           <div class="collapse" id="sub_bh" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1411,7 +1434,7 @@
         <!-- 小鸡 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_xji" data-toggle="collapse">小鸡</h5>
+            <h5 data-target="#sub_xji" data-toggle="collapse"><img src="images/wuqi/sub_xji_logo.png">小鸡</h5>
           </div>
           <div class="collapse" id="sub_xji" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1426,7 +1449,7 @@
         <!-- 陷阱 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_xj" data-toggle="collapse">陷阱</h5>
+            <h5 data-target="#sub_xj" data-toggle="collapse"><img src="images/wuqi/sub_xj_logo.png">陷阱</h5>
           </div>
           <div class="collapse" id="sub_xj" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1441,7 +1464,7 @@
         <!-- 毒瓶 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_dp" data-toggle="collapse">毒瓶</h5>
+            <h5 data-target="#sub_dp" data-toggle="collapse"><img src="images/wuqi/sub_dp_logo.png">毒瓶</h5>
           </div>
           <div class="collapse" id="sub_dp" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1456,7 +1479,7 @@
         <!-- 索敌 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_sd" data-toggle="collapse">索敌</h5>
+            <h5 data-target="#sub_sd" data-toggle="collapse"><img src="images/wuqi/sub_sd_logo.png">索敌</h5>
           </div>
           <div class="collapse" id="sub_sd" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1471,7 +1494,7 @@
         <!-- 雨帘 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_yl" data-toggle="collapse">雨帘</h5>
+            <h5 data-target="#sub_yl" data-toggle="collapse"><img src="images/wuqi/sub_yl_logo.png">雨帘</h5>
           </div>
           <div class="collapse" id="sub_yl" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1486,7 +1509,7 @@
         <!-- 花洒 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_hs" data-toggle="collapse">花洒</h5>
+            <h5 data-target="#sub_hs" data-toggle="collapse"><img src="images/wuqi/sub_hs_logo.png">花洒</h5>
           </div>
           <div class="collapse" id="sub_hs" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1501,7 +1524,8 @@
         <!-- 雷达 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_ld" data-toggle="collapse">雷达</h5>
+            <h5 data-target="#sub_ld" data-toggle="collapse">
+              <img src="images/wuqi/sub_ld_logo.png">雷达</h5>
           </div>
           <div class="collapse" id="sub_ld" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1516,7 +1540,7 @@
         <!-- 碳酸 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_ts" data-toggle="collapse">碳酸</h5>
+            <h5 data-target="#sub_ts" data-toggle="collapse"><img src="images/wuqi/sub_ts_logo.png">碳酸</h5>
           </div>
           <div class="collapse" id="sub_ts" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1531,7 +1555,8 @@
         <!-- 鱼雷 -->
         <div class="card">
           <div class="card-header">
-            <h5 data-target="#sub_ylei" data-toggle="collapse">鱼雷</h5>
+            <h5 data-target="#sub_ylei" data-toggle="collapse">
+              <img src="images/wuqi/sub_ylei_logo.png">鱼雷</h5>
           </div>
           <div class="collapse" id="sub_ylei" data-parent="#subparent">
             <div class="card-body card_intro">
@@ -1543,13 +1568,192 @@
             </div>
           </div>
         </div>
-        <!-- 特殊武器 -->
-        <div class="title">
-          <h3>特殊武器</h3>
-          <p>也就是俗称的大招，玩家通过涂地等方式，积累SP槽能量，按下右摇杆释放特殊武器，因此特殊武器也被称为SP大招。</p>
-          <p>使用SP武器需要消耗SP值。不同武器，使用SP武器消耗的P值不同。不同的主武器，会配有相应的特殊武器。</p>
+      </div>
+      <!-- 特殊武器 -->
+      <div class="title" id="spe">
+        <h3>特殊武器</h3>
+        <p>也就是俗称的大招，玩家通过涂地等方式，积累SP槽能量，按下右摇杆释放特殊武器，因此特殊武器也被称为SP大招。</p>
+        <p>使用SP武器需要消耗SP值。不同武器，使用SP武器消耗的P值不同。不同的主武器，会配有相应的特殊武器。</p>
+      </div>
+      <div id="speparent" class="intro2">
+        <!-- 导弹 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_dd" data-toggle="collapse">
+              <img src="images/wuqi/spe_dd_logo.png">导弹</h5>
+          </div>
+          <div class="collapse show" id="spe_dd" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_dd1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_dd2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 水枪 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_sq" data-toggle="collapse">
+              <img src="images/wuqi/spe_sq_logo.png">水枪</h5>
+          </div>
+          <div class="collapse" id="spe_sq" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_sq1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_sq2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 飞机 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_fj" data-toggle="collapse">
+              <img src="images/wuqi/spe_fj_logo.png">飞机</h5>
+          </div>
+          <div class="collapse" id="spe_fj" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_fj1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_fj2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 砸地 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_zd" data-toggle="collapse">
+              <img src="images/wuqi/spe_zd_logo.png">砸地</h5>
+          </div>
+          <div class="collapse" id="spe_zd" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_zd1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_zd2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 墨甲 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_mj" data-toggle="collapse">
+              <img src="images/wuqi/spe_mj_logo.png">墨甲</h5>
+          </div>
+          <div class="collapse" id="spe_mj" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_mj1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_mj2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 雷rush -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_rush" data-toggle="collapse">
+              <img src="images/wuqi/spe_rush_logo.png">雷rush</h5>
+          </div>
+          <div class="collapse" id="spe_rush" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_rush1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_rush2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 雨云 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_yy" data-toggle="collapse">
+              <img src="images/wuqi/spe_yy_logo.png">雨云</h5>
+          </div>
+          <div class="collapse" id="spe_yy" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_yy1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_yy2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 仓鼠球 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_csq" data-toggle="collapse">
+              <img src="images/wuqi/spe_csq_logo.png">仓鼠球</h5>
+          </div>
+          <div class="collapse" id="spe_csq" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_csq1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_csq2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 泡泡 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_pp" data-toggle="collapse">
+              <img src="images/wuqi/spe_pp_logo.png">泡泡</h5>
+          </div>
+          <div class="collapse" id="spe_pp" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_pp1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_pp2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- nice弹 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_nice" data-toggle="collapse">
+              <img src="images/wuqi/spe_nice_logo.png">nice弹</h5>
+          </div>
+          <div class="collapse" id="spe_nice" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_nice1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_nice2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
+        </div>
+        <!-- 锤子 -->
+        <div class="card">
+          <div class="card-header">
+            <h5 data-target="#spe_cz" data-toggle="collapse">
+              <img src="images/wuqi/spe_cz_logo.png">锤子</h5>
+          </div>
+          <div class="collapse" id="spe_cz" data-parent="#speparent">
+            <div class="card-body card_intro">
+              <div>
+                <img class="img-thumbnail" src="images/wuqi/spe_cz1.jpg">
+                <img class="img-thumbnail" src="images/wuqi/spe_cz2.jpg">
+              </div>
+              <p>用法介绍。</p>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- 脚部 -->
@@ -1561,8 +1765,9 @@
   </div>
   <!-- 网易云外部链接 -->
   <div id="music">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=110
-      src="//music.163.com/outchain/player?type=0&id=2782418236&auto=1&height=90"></iframe>
+    <div>原声大碟</div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
+      src="//music.163.com/outchain/player?type=0&id=2782418236&auto=1&height=430"></iframe>
   </div>
 </body>
 
