@@ -13,8 +13,6 @@
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/common.js"></script>
-	<script src="./js/index.js"></script>
 	<style>
 	</style>
 </head>
@@ -27,19 +25,22 @@
 		<div class="container">
 			<ul class="nav justify-content-around">
 				<li>
-					<a href="#zx_header">新闻</a>
-					<ul>
-						<li><a href="#news">相关新闻</a></li>
-						<li><a href="#news">祭典公布</a></li>
-						<li><a href="#news">微博热点</a></li>
-					</ul>
+					<a href="moniqi.html">模拟</a>
 				</li>
-				<li>
+				<!-- <li>
 					<a href="#zx_header">论坛</a>
 					<ul>
 						<li><a href="#bbs_content">进入论坛</a></li>
 						<li><a href="#bbs_content">留言板</a></li>
 						<li><a href="#bbs_content">发帖</a></li>
+					</ul>
+				</li> -->
+				<li>
+					<a href="#zx_header">新闻</a>
+					<ul>
+						<li><a href="#news">相关新闻</a></li>
+						<li><a href="#news">祭典公布</a></li>
+						<li><a href="#news">微博热点</a></li>
 					</ul>
 				</li>
 				<li>
@@ -87,13 +88,13 @@
 				<li>
 					<a href="data.html">攻略</a>
 					<ul>
-						<li><a href="#">装备系统</a></li>
-						<li><a href="#">技能介绍</a></li>
-						<li><a href="#">技能获取</a></li>
-						<li><a href="#">技能推荐</a></li>
-						<li><a href="#">版本更新</a></li>
-						<li><a href="#">基本用语</a></li>
-						<li><a href="#">世界观</a></li>
+						<li><a href="#zb">装备系统</a></li>
+						<li><a href="#jn">技能介绍</a></li>
+						<li><a href="#jnglow">技能养成</a></li>
+						<li><a href="#jbyy">基本用语</a></li>
+						<li><a href="#other">其他相关</a></li>
+						<li><a href="#jq">技巧攻略</a></li>
+						<li><a href="#bbgx">版本更新</a></li>
 						<li><a href="#intro_first">一代介绍</a></li>
 						<li><a href="#intro_second">二代介绍</a></li>
 					</ul>
@@ -114,21 +115,21 @@
 		</ul>
 		<!-- 轮播左右按键 -->
 		<div class="l_r_btn">
-			<button class="left btn btn-light" onclick="banner.banner_to_left()">
+			<button class="left btn btn-light" id="banner_to_left">
 				<div></div>
 			</button>
-			<button class="right btn btn-light" onclick="banner.banner_to_right()">
+			<button class="right btn btn-light" id="banner_to_right">
 				<div></div>
 			</button>
 		</div>
 		<!-- 轮播跳页按钮 -->
-		<div class="banner_to">
-			<button id="banner_page_1" class="banner_to_btn" onclick="banner.banner_to(0)"></button>
-			<button id="banner_page_2" class="banner_to_btn" onclick="banner.banner_to(60)"></button>
-			<button id="banner_page_3" class="banner_to_btn" onclick="banner.banner_to(120)"></button>
-			<button id="banner_page_4" class="banner_to_btn" onclick="banner.banner_to(180)"></button>
-			<button id="banner_page_5" class="banner_to_btn" onclick="banner.banner_to(240)"></button>
-			<button id="banner_page_6" class="banner_to_btn" onclick="banner.banner_to(300)"></button>
+		<div id="banner_to">
+			<button value="1"></button>
+			<button value="2"></button>
+			<button value="3"></button>
+			<button value="4"></button>
+			<button value="5"></button>
+			<button value="6"></button>
 		</div>
 	</div>
 	<!-- 主体内容 -->
@@ -455,7 +456,7 @@
 							祭典总计24小时，结束后2小时，会发表本次祭典中各阵营的单人模式/朋友模式胜率和得票率，以此决定最终胜利的阵营。
 						</p>
 						<p>
-							参加祭典的玩家均能获得珍贵道具“超级海螺”。
+							参加祭典的玩家均能获得珍贵道具<a class="my_a" href="data.html#hlsy">“超级海螺”</a>。
 						</p>
 					</div>
 				</div>
@@ -503,7 +504,7 @@
 	<!-- 脚部 -->
 	<iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
 	<!-- 返回首页按钮 -->
-	<div id="to_top_btn" onclick="to_top()">
+	<div id="to_top_btn">
 		<img src="images/totop.png">
 		<div id="to_top_hover">返回首页</div>
 	</div>
@@ -513,6 +514,8 @@
 		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
 			src="//music.163.com/outchain/player?type=0&id=2782418236&auto=1&height=430"></iframe>
 	</div>
+	<script src="./js/index.js"></script>
+	<script src="./js/to_top.js"></script>
 </body>
 
 </html>

@@ -13,7 +13,6 @@
 	<script src="./js/jquery.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/user_reg.js"></script>
 </head>
 
 <body>
@@ -34,27 +33,27 @@
 						<!-- 表单输入框 -->
 						<!--用户名  -->
 						<div class="input_box">
-							<input id="uname" onblur="reg.uname_check()" onfocus="reg.uname_tips()" type="text" required="">
+							<input id="uname" type="text" required="">
 							<label id="uname_msg" for="uname">用户名:</label>
 						</div>
 						<!--密码  -->
 						<div class="input_box">
-							<input id="upwd" onblur="reg.upwd_check()" onfocus="reg.upwd_tips()" type="password" required="">
+							<input id="upwd" type="password" required="">
 							<label id="upwd_msg" for="upwd">设置密码:</label>
 						</div>
 						<!-- 二次密码 -->
 						<div class="input_box">
-							<input id="reupwd" onblur="reg.reupwd_check()" onfocus="reg.reupwd_tips()" type="password" required="">
+							<input id="reupwd"  type="password" required="">
 							<label id="reupwd_msg" for="reupwd">重输密码:</label>
 						</div>
 						<!-- 邮箱 -->
 						<div class="input_box">
-							<input id="email" onblur="reg.email_check()" onfocus="reg.email_tips()" type="text" required="">
+							<input id="email" type="text" required="">
 							<label id="email_msg" for="email">邮箱:</label>
 						</div>
 						<!-- 手机号 -->
 						<div class="input_box">
-							<input id="phone" onblur="reg.phone_check()" onfocus="reg.phone_tips()" type="text" required="">
+							<input id="phone"  type="text" required="">
 							<label id="phone_msg" for="phone">手机号码:</label></td>
 						</div>
 						<!-- 性别 -->
@@ -66,7 +65,7 @@
 							<input type="radio" name="Sex" value="0" id="women">
 						</div>
 						<!-- 按钮 -->
-						<button id="btn" onclick="reg.reg_check()" title="点击提交注册信息">
+						<button id="btn"  title="点击提交注册信息">
 							<p>提交注册</p>
 						</button>
 					</div>
@@ -74,7 +73,7 @@
 			</div>
 			<!-- 这是弹出框 -->
 			<div id="alert_div" class="text-center">
-				<div onclick="reg.stop_skip()">
+				<div>
 					<span>留在页面</span>
 					<span>&times;</span>
 				</div>
@@ -92,6 +91,7 @@
 		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
 			src="//music.163.com/outchain/player?type=0&id=2782418236&auto=1&height=430"></iframe>
 	</div>
+	<script src="./js/user_reg.js"></script>
 </body>
 
 </html>
