@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>用户注册</title>
+	<title>用户注册-NoRiShooter-为喷友提供更好、更轻松的交流与资讯攻略</title>
 	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="./css/common.css">
@@ -17,7 +17,7 @@
 
 <body>
 	<!-- 头部 -->
-	<iframe class="my_header" src="header.html" frameborder="0" scrolling="no"></iframe>
+	<header id="header"></header>
 	<section class="bg" id="form">
 		<div class="container">
 			<!-- 外框 -->
@@ -33,28 +33,28 @@
 						<!-- 表单输入框 -->
 						<!--用户名  -->
 						<div class="input_box">
-							<input id="uname" type="text" required="">
-							<label id="uname_msg" for="uname">用户名:</label>
+							<input id="uname" type="text" required="" data-num="1">
+							<label for="uname">用户名:</label>
 						</div>
 						<!--密码  -->
 						<div class="input_box">
-							<input id="upwd" type="password" required="">
-							<label id="upwd_msg" for="upwd">设置密码:</label>
+							<input id="upwd" type="password" required="" data-num="2">
+							<label for="upwd">设置密码:</label>
 						</div>
 						<!-- 二次密码 -->
 						<div class="input_box">
-							<input id="reupwd"  type="password" required="">
-							<label id="reupwd_msg" for="reupwd">重输密码:</label>
+							<input id="reupwd" type="password" required="" data-num="3">
+							<label for="reupwd">重输密码:</label>
 						</div>
 						<!-- 邮箱 -->
 						<div class="input_box">
-							<input id="email" type="text" required="">
-							<label id="email_msg" for="email">邮箱:</label>
+							<input id="email" type="text" required="" data-num="4">
+							<label for="email">邮箱:</label>
 						</div>
 						<!-- 手机号 -->
 						<div class="input_box">
-							<input id="phone"  type="text" required="">
-							<label id="phone_msg" for="phone">手机号码:</label></td>
+							<input id="phone" type="text" required="" data-num="5">
+							<label for="phone">手机号码:</label></td>
 						</div>
 						<!-- 性别 -->
 						<div class="sex">
@@ -65,7 +65,7 @@
 							<input type="radio" name="Sex" value="0" id="women">
 						</div>
 						<!-- 按钮 -->
-						<button id="btn"  title="点击提交注册信息">
+						<button id="btn" title="点击提交注册信息">
 							<p>提交注册</p>
 						</button>
 					</div>
@@ -84,13 +84,16 @@
 		</div>
 	</section>
 	<!-- 脚部 -->
-	<iframe class="my_footer" src="footer.html" frameborder="0" scrolling="no"></iframe>
+	<footer id="footer"></footer>
 	<!-- 网易云外部链接 -->
 	<div id="music">
 		<div>原声音乐</div>
 		<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450
 			src="//music.163.com/outchain/player?type=0&id=2782418236&auto=1&height=430"></iframe>
 	</div>
+	<script src="./js/common.js"></script>
+	<script src="./js/header.js"></script>
+	<script src="./js/footer.js"></script>
 	<script src="./js/user_reg.js"></script>
 </body>
 
